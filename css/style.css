@@ -1,0 +1,90 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background: black;
+  font-family: sans-serif;
+  color: #f4b7b1;
+  font-weight: bold;
+}
+
+nav {display:  flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img { 
+  width: 200px;        
+  height: 200px;
+}
+nav a {
+  color: #f4b7b1;
+  text-decoration: none;
+}
+
+ul { 
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+/* forms the placement of the contatiner*/
+.btncontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 200px;
+  gap: 20px;
+}
+/* forms the look of the items in the container */
+.pagelink,
+.functionBtn {
+  background: #fbd550;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 25px;
+  border-radius: 15px;
+}
+/*styles the text in the container elements*/
+.pagelink a,
+.functionBtn button {
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+  background: transparent;
+  text-align: center;
+  text-decoration: none;
+}
+
+@media (max-width: 550px) {
+.logo img { display: block;
+  width: 100%;        
+  height: 50%;
+}
+
+  nav ul {
+    flex-wrap: wrap;
+    font-size: 2rem;
+  }
+
+  .btncontainer {
+    padding: 20px;
+    gap: 40px;
+  }
+
+  .pagelink,
+  .functionBtn {
+    width: 450px;
+    padding: 25px;
+    text-align: center;
+  }
+}
+
