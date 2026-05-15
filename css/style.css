@@ -14,22 +14,23 @@ body {
   font-weight: bold;
 }
 
-nav {display:  flex;
-  flex-direction: column;
+nav {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
 }
 
 .logo img { 
   width: 200px;        
   height: 200px;
 }
+
 nav a {
   color: #f4b7b1;
   text-decoration: none;
 }
 
-ul { 
+ul {
   display: flex;
   list-style: none;
   gap: 20px;
